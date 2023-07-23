@@ -3,7 +3,7 @@ import useTitle from "../../Hooks/useTitle";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
-function Login() {
+function SignUp() {
   useTitle("Login");
   const {
     register,
@@ -13,7 +13,7 @@ function Login() {
   const onSubmit = (data) => console.log(data);
   return (
     <div className="w-1/3 mx-auto p-8 border rounded-md mt-14">
-      <h2 className="text-2xl mb-6">Sign In</h2>
+      <h2 className="text-2xl mb-6">Sign Up</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("email", { required: true })}
@@ -36,10 +36,10 @@ function Login() {
         />
       </form>
       <div className="mt-4">
-        Don't have an account? <Link to="/sign-up">Sign Up Now</Link>
+        Already have an account? <Link to="/login">Sign In Here</Link>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default SignUp;

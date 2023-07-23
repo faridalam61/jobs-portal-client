@@ -11,7 +11,7 @@ function About() {
         title="About Us"
         description="Get the latest news, updates and tips"
       />
-      <div className="container mx-auto py-6 flex gap-10">
+      <div className="container mx-auto py-10 flex gap-10">
         <div className="w-2/5">
           <img src={aboutImg} />
         </div>
